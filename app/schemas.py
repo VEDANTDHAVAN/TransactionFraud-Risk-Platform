@@ -23,3 +23,6 @@ class PredictionResponse(BaseModel):
     fraud_probability: float
     prediction: int
     risk_level: str
+
+class ExplainationResponse(BaseModel):
+    top_reasons: list
